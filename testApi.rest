@@ -1,0 +1,37 @@
+GET http://localhost:3000/api/items
+
+### now i need to post.
+POST http://localhost:3000/api/items
+Content-Type: application/json
+
+{
+  "title": "Item Title",
+  "description": "Item Description",
+  "image": "Image URL"
+}
+
+### Now we check for signin
+
+GET http://localhost:3000/
+
+### Posting data
+POST http://localhost:3000/api/signin
+Content-Type: application/json
+
+{
+    "name": "Alex",
+    "password": "night555",
+    "email": "example@gmail.com",
+    "college": "IES College",
+    "roll": "25",
+    "dob": "28.9.2002"
+}
+
+### NOw checking for login
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email": "example@gmail.com",
+    "password": "night555"
+}
